@@ -2,42 +2,36 @@
     width:100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    padding: 5px;
     height: auto;
 }
 
-.containers{
-    width: 40%;
+.container1{
+    width:47%
+}
+.side-container{
     display: flex;
     justify-content: space-between;
-    
+    gap:15px;
+    margin-top: 15px;
 }
-.small-container{
-    width: 100%;
+.conatiner2{
+   width:52%;
+   margin-top: 20px;
 }
 
-
-.largecontainer{
-    width: 60%;
-    margin-left: 10px;
-}
 
 @media screen and (max-width : 786px) {
     .layout1{
-        flex-direction: column;
-        margin-left: 0;
+        display: block;
+    }
+    .side-container{
+        display: block;
+        width:90%;
 
     }
-    .small-container{
-        width: 100%;
-    }
-    .largecontainer{
-        width: 100%;
-    }
-
-    .containers{
-        flex-wrap: wrap;
+    .conatiner2{
+        width:'90%'
     }
     
     .content-container{
@@ -56,4 +50,5 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap:'20px'
 }

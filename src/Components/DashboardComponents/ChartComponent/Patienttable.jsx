@@ -62,14 +62,22 @@ const patientData = [
     disease: 'CHOLERA',
     room: 105,
   },
+  {
+    id: 2,
+    name: 'Mark Hay',
+    doctor: 'Dr. Mark',
+    admitDate: '26/05/2017',
+    disease: 'CHOLERA',
+    room: 105,
+  },
 
   // Add the rest of your data here...
 ];
 
 export default function PatientTable() {
   return (
-    <Box sx={{width: '100%',      boxShadow:'2px 2px 10px lightblue'    }}>
-     <TableContainer component={Paper} sx={{width:'100%'}}>
+    <Box sx={{width: '100%', boxShadow: '4px 4px 10px grey'    }}>
+     <TableContainer component={Paper} sx={{width:'100%', overflow:'auto', hright:'70%'}}>
       <Table sx={{ width:'100%' }} aria-label="patient table">
         <TableHead>
           <TableRow>

@@ -10,8 +10,9 @@ export default function Dashboardscreen() {
     <Box sx={{ 
       padding: '10px 20px', 
       height: '100vh', 
-      display: 'flex', 
-      flexDirection: 'column',  // Prevent horizontal scrolling
+      // display: 'flex', 
+      // flexDirection: 'column',  
+      mb:'20px'
     }}>
       <Box sx={{ 
         display: 'flex', 
@@ -42,21 +43,26 @@ export default function Dashboardscreen() {
       <Box sx={{ 
         display: 'flex', 
         flexDirection: 'column', 
-        flexGrow: 1 
+        flexGrow: 1 ,
+        minHeight:'70vh',
+        justifyContent:'space-between',
+        pb:'20px'
       }}>
         <Box sx={{ 
           flex: 1, 
           display: 'flex', 
           alignItems: 'stretch', 
-          marginBottom: '10px' 
+          marginBottom: '10px' ,
+          
         }}>
-          <Layout1 />
+          <Layout1 sx={{flex:1}} />
         </Box>
         <Box sx={{ 
           flex: 1, 
           display: 'flex', 
           alignItems: 'stretch', 
-          marginBottom: '10px' 
+          marginBottom: '10px',
+          height:'30%'
         }}>
           <Layout2 sx={{ flex: 1 }} />
         </Box>
@@ -64,7 +70,8 @@ export default function Dashboardscreen() {
           flex: 2, 
           display: 'flex', 
           alignItems: 'stretch' ,
-          marginTop:'10px'
+          marginTop:'10px',
+          height:'40%'
         }}>
           <Layout3 sx={{ flex: 1 }} />
         </Box>

@@ -4,3 +4,13 @@ input{
     padding: 5px;
     color: grey;
 }
+
+
+
+.footer{
+    width: 100vh;
+    height: 15px;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5px;
+}

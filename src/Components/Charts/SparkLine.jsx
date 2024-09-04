@@ -15,6 +15,7 @@ export default function SimpleLineChart() {
                 fill: false,
                 backgroundColor: 'rgba(75,192,192,0.2)',
                 borderColor: 'rgba(75,192,192,1)',
+                tension:0.2
             },
         ],
     };
@@ -23,14 +24,18 @@ export default function SimpleLineChart() {
         responsive: true,
         plugins: {
             legend: {
-                display: true,
+                display: false,
             },
             title: {
-                display: true,
-                text: 'Monthly Sales Data',
+                display: false,
             },
         },
     };
 
-    return <Line data={data} options={options} />;
+    return (
+       <div style={{witdh:'100%', height:'100%'}}>
+        <Line data={data} options={options} />
+       </div>
+    )
+    ;
 }

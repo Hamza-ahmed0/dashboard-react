@@ -1,21 +1,16 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';;
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { EmailOutlined } from '@mui/icons-material';
+import { EmailOutlined, NotificationsNoneOutlined } from '@mui/icons-material';
 
 
 
@@ -85,7 +80,7 @@ export default function TopBar({toggleSidebar}) {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
-            <MailIcon />
+            <EmailOutlined />
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -97,7 +92,7 @@ export default function TopBar({toggleSidebar}) {
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
+            <NotificationsNoneOutlined />
           </Badge>
         </IconButton>
         <p>Notifications</p>
@@ -157,7 +152,7 @@ export default function TopBar({toggleSidebar}) {
                 color: 'white',
               },
             }}>
-                <NotificationsIcon />
+                <NotificationsNoneOutlined />
               </Badge>
             </IconButton>
             <IconButton
