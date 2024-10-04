@@ -7,7 +7,7 @@
 }
 
 .container1{
-    width:47%
+    flex: 0 0 47%;
 }
 .side-container{
     display: flex;
@@ -16,8 +16,9 @@
     margin-top: 15px;
 }
 .conatiner2{
-   width:52%;
+   flex: 0 0 52%;
    margin-top: 20px;
+   
 }
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Typography } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStethoscope } from '@fortawesome/free-solid-svg-icons'
+import { faStethoscope, faX } from '@fortawesome/free-solid-svg-icons'
 import Images from '../assets/images.jpg'
 import {List, ListItemButton, ListItemIcon, ListItemText} from '@mui/material'
 import AirplayIcon from '@mui/icons-material/Airplay';
@@ -41,7 +41,8 @@ const NavList = ({title , icon}) =>{
   )
 }
 
-export default function Sidebar() {
+export default function Sidebar({toggleSidebar}) {
+  
  
   return (
     
@@ -51,6 +52,7 @@ export default function Sidebar() {
       <Typography variant='h1' sx={{fontWeight:'bold', fontSize:'18pt', color:'white',ml:'10px'}}>
         Medical
       </Typography>
+      <Box sx={{ display:{xs:'block', md:'none' , position:'absolute', right:20, fontWeight:'bold', color:'white',cursor:'pointer'}}} onClick={toggleSidebar}><FontAwesomeIcon icon={faX}  /></Box>
     </Box>
     <Box sx={{boxShadow: '1px solid black', padding:'5px', backgroundColor:'white',}} >
 

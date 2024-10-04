@@ -25,13 +25,15 @@ export default function Dashboard() {
       <Box 
         sx={{ 
           display: isSidebaropen ? 'block' : 'none', 
-          width: { md: isSidebaropen ? '18%' : '0%', sm:isSidebaropen ? '100%' :'0' }, 
+          width: { md: isSidebaropen ? '18%' : '0%', xs :isSidebaropen ? '70%' :'0%' }, 
           transition: 'width 0.3s', 
           height: '100vh', 
-          overflow: 'auto' 
+          overflow: 'auto' ,
+          position:{xs:'absolute', md:'relative'},
+          zIndex: {xs: 10}
         }}
       >
-        <Sidebar />
+        <Sidebar toggleSidebar={toggleSidebar} />
       </Box>
       <Box 
         sx={{ 
